@@ -152,8 +152,8 @@ footer {
 }
 
 .service-circle {
-  width: 180px;
-  height: 180px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background-size: cover;
   background-position: center;
@@ -161,7 +161,7 @@ footer {
   overflow: hidden;
   filter: blur(1px);
   transition: transform 0.3s ease, filter 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .service-circle:hover {
@@ -171,13 +171,18 @@ footer {
 
 .circle-overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
   width: 100%;
-  text-align: center;
-  background: rgba(255, 192, 203, 0.6); /* semi-transparent pink */
+  height: 100%;
+  
   color: white;
   font-weight: bold;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 0 0 50% 50%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 50%;
 }
