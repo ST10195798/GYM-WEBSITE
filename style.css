@@ -143,3 +143,41 @@ footer {
   font-weight: bold;
   text-align: center;
 }
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.service-circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  filter: blur(1px);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.service-circle:hover {
+  transform: scale(1.05);
+  filter: blur(0);
+}
+
+.circle-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 192, 203, 0.6); /* semi-transparent pink */
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 0 0 50% 50%;
+}
